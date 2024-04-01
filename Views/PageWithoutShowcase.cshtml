@@ -1,0 +1,12 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "_Layout.cshtml";
+	ViewData["Title"] = @Model.Value("title");
+}
+
+@await Html.PartialAsync("_Header")
+@await Html.PartialAsync("_LetsConnectSection")
+@await Html.PartialAsync("_ContactCardsSection")
+@await Html.PartialAsync("_ContactFormSection")
+@await Html.PartialAsync("_MapSection")
